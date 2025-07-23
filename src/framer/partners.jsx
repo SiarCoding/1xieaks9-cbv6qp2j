@@ -223,7 +223,7 @@ function Ticker(props) {
 				height: heightType ? child.props?.height : "100%",
 			};
 			return (
-				<LayoutGroup inherit={"id"}>
+				<LayoutGroup inherit={"id"} key={`cloned-${index}`}>
 					<li ref={ref} style={size2}>
 						{
 							/* @__PURE__ */ cloneElement(
@@ -258,7 +258,7 @@ function Ticker(props) {
 						willChange: !isInView ? void 0 : "transform",
 					};
 					return (
-						<LayoutGroup inherit={"id"}>
+						<LayoutGroup inherit={"id"} key={`duped-${i}-${childIndex}`}>
 							<li style={size2} aria-hidden={true}>
 								{
 									/* @__PURE__ */ cloneElement(
