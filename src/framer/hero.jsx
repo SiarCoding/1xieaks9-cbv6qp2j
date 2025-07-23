@@ -544,3 +544,6 @@ ComponentWithRoot.Responsive = ({ locale, ...rest }) => {
 Object.assign(ComponentWithRoot, stdin_default);
 var hero_default = ComponentWithRoot;
 export { hero_default as default };
+
+
+export default ComponentWithRoot
